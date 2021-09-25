@@ -19,3 +19,8 @@ Content-Type: application/json
     "name": "zj",
     "password": "p@ssword"
 }
+
+###
+
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiemoiLCJpYXQiOjE2MzI1NjYyNzR9.3vEP-v3kWOG4aQ7Q5JUXlmNAEJZAcIL6FYVy3wTXJkA
