@@ -1,8 +1,4 @@
-GET http://localhost:3000/users
-
-###
-
-POST http://localhost:3000/users
+POST http://localhost:4000/users
 Content-Type: application/json
 
 {
@@ -12,15 +8,33 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:3000/users/login
+POST http://localhost:4000/users/login
 Content-Type: application/json
 
 {
     "name": "zj",
     "password": "p@ssword"
+}
+
+###
+
+DELETE http://localhost:4000/users/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiemoiLCJpYXQiOjE2MzI1NzU1NDF9.njBbxj65qXdZE6N_bRmhX7khcp67dagCIjdueJshOAA"
+}
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiemoiLCJpYXQiOjE2MzI1NzU1NDF9.njBbxj65qXdZE6N_bRmhX7khcp67dagCIjdueJshOAA"
 }
 
 ###
 
 GET http://localhost:3000/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiemoiLCJpYXQiOjE2MzI1NjYyNzR9.3vEP-v3kWOG4aQ7Q5JUXlmNAEJZAcIL6FYVy3wTXJkA
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiemoiLCJpYXQiOjE2MzI1NzU1NjEsImV4cCI6MTYzMjU3NTU3Nn0.EzM7w_H_m7OJrdi7BEvU-lsiRKPkEdj6Xzqt9qWP4Qo
